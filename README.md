@@ -29,11 +29,11 @@ No terminal bash, ou do vs code
 
 No Windows:
 
-.venv\Scripts\activate
+    .venv\Scripts\activate
 
 No Linux/Mac:
-    ```bash
-source .venv/bin/activate
+   
+    source .venv/bin/activate
 
 4. Instale as dependências:
      ```bash
