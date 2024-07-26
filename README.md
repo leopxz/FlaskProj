@@ -37,8 +37,9 @@ No Linux/Mac:
 
 Observação: Você deve ver o nome do ambiente virtual (por exemplo, .venv) no início da linha de comando, indicando que o ambiente está ativo.
 4. Instale as dependências:
+     
      ```bash
-   pip install -r requirements.txt
+     pip install -r requirements.txt
 
 
 ### Configuração do Banco de Dados
