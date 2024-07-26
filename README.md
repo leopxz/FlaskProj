@@ -44,7 +44,6 @@ source .venv/bin/activate
 
 Inicialize o banco de dados:
 
-    ```bash
     flask db init
     flask db migrate -m "Initial migration."
     flask db upgrade
@@ -57,15 +56,15 @@ Para executar o projeto, siga os seguintes passos:
 
 No Windows:
 
-.venv\Scripts\activate
+    .venv\Scripts\activate
 
 No Linux/Mac:
 
-source .venv/bin/activate
+    source .venv/bin/activate
 
 2. Execute a aplicação:
 
-  python app.py
+       python app.py
 
 3. Acesse a aplicação:
 Abra o navegador e vá para http://127.0.0.1:5000
