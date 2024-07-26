@@ -97,5 +97,5 @@ FlaskProj/
 ├── app.py                     # Arquivo principal da aplicação Flask
 ├── banco                      # Banco de dados SQLite
 ├── bancodedados.py            # Script para inicializar o banco de dados
-└── requeriments.txt           # Lista de dependências do projeto
+└── requirements.txt           # Lista de dependências do projeto
 
