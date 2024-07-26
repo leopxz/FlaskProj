@@ -98,7 +98,7 @@ FlaskProj/<br>
 │       └── styles.css # Arquivo CSS para estilização das páginas HTML<br>
 │
 ├── views/<br>
-│   ├── createpage.html # Página para criar um novo empregado<br>
+│   ├── createpage.html ## Página para criar um novo empregado<br>
 │   ├── datalist.html # Página para listar todos os empregados<br>
 │   ├── delete.html # Página para confirmar a exclusão de um empregado<br>
 │   ├── mainpage.html # Página principal<br>
