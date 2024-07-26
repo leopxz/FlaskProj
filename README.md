@@ -114,6 +114,6 @@ FlaskProj/
 
 ---
 
-Notas Adicionais
-Se você encontrar erros: Verifique se todos os pré-requisitos estão instalados corretamente e se seguiu todas as etapas cuidadosamente. Se necessário, consulte a documentação do Flask e do SQLAlchemy para mais detalhes.
+## Notas Adicionais
+Se você encontrar erros: Verifique se todos os pré-requisitos estão instalados corretamente e se seguiu todas as etapas cuidadosamente.<br> Se necessário, consulte a documentação do Flask e do SQLAlchemy para mais detalhes.<br>
 Para desativar o ambiente virtual: Execute deactivate no terminal.
