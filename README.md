@@ -28,23 +28,27 @@ Para configurar o projeto em sua máquina, siga os seguintes passos:
 No terminal bash, ou do vs code
 
 No Windows:
- ```bash
+
 .venv\Scripts\activate
 
 No Linux/Mac:
- ```bash
+    ```bash
 source .venv/bin/activate
 
 4. Instale as dependências:
- ```bash
+     ```bash
    pip install -r requirements.txt
 
-5. Configuração do Banco de Dados:
+
+### Configuração do Banco de Dados
+
 Inicialize o banco de dados:
- ```bash
+
+    ```bash
 flask db init
 flask db migrate -m "Initial migration."
 flask db upgrade
+
 
 ### Execução
 
@@ -52,15 +56,15 @@ Para executar o projeto, siga os seguintes passos:
 1. Ative o ambiente virtual, se ainda não estiver ativo:
 
 No Windows:
- ```bash
+    ```bash
 .venv\Scripts\activate
 
 No Linux/Mac:
- ```bash
+    ```bash
 source .venv/bin/activate
 
 2. Execute a aplicação:
- ```bash
+    ```bash
   python app.py
 
 3. Acesse a aplicação:
