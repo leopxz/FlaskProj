@@ -85,32 +85,32 @@ Abra o navegador e vá para http://127.0.0.1:5000 Você deverá ver a página pr
 ### Estrutura
 A estrutura do projeto é a seguinte:
 
-FlaskProj/
+FlaskProj/<br>
 │<br>
 ├── controllers/<br>
-│   └── employeeController.py  # Controlador responsável pelas rotas e lógica de negócio<br>
+│   └── employeeController.py - # Controlador responsável pelas rotas e lógica de negócio<br>
 │<br>
 ├── models/<br>
-│   └── employeeModel.py       # Modelo do banco de dados para os empregados<br>
+│   └── employeeModel.py   -    # Modelo do banco de dados para os empregados<br>
 │
 ├── static/<br>
 │   └── css/<br>
-│       └── styles.css         # Arquivo CSS para estilização das páginas HTML<br>
+│       └── styles.css  -       # Arquivo CSS para estilização das páginas HTML<br>
 │
 ├── views/<br>
-│   ├── createpage.html        # Página para criar um novo empregado<br>
-│   ├── datalist.html          # Página para listar todos os empregados<br>
-│   ├── delete.html            # Página para confirmar a exclusão de um empregado<br>
-│   ├── mainpage.html          # Página principal<br>
-│   └── update.html            # Página para atualizar informações de um empregado<br>
+│   ├── createpage.html -       # Página para criar um novo empregado<br>
+│   ├── datalist.html  -        # Página para listar todos os empregados<br>
+│   ├── delete.html    -        # Página para confirmar a exclusão de um empregado<br>
+│   ├── mainpage.html  -        # Página principal<br>
+│   └── update.html    -       # Página para atualizar informações de um empregado<br>
 │<br>
-├── .gitignore                 # Arquivos e diretórios a serem ignorados pelo Git<br>
-├── LICENSE                    # Licença do projeto<br>
-├── README.md                  # Documentação do projeto<br>
-├── app.py                     # Arquivo principal da aplicação Flask<br>
-├── banco                      # Banco de dados SQLite<br>
-├── bancodedados.py            # Script para inicializar o banco de dados<br>
-└── requirements.txt           # Lista de dependências do projeto<br>
+├── .gitignore         -        # Arquivos e diretórios a serem ignorados pelo Git<br>
+├── LICENSE            -        # Licença do projeto<br>
+├── README.md          -        # Documentação do projeto<br>
+├── app.py             -        # Arquivo principal da aplicação Flask<br>
+├── banco              -        # Banco de dados SQLite<br>
+├── bancodedados.py    -        # Script para inicializar o banco de dados<br>
+└── requirements.txt   -        # Lista de dependências do projeto<br>
 
 ---
 
