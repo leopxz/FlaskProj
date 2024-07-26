@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Funcionários</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Lista de Funcionários</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('employee.index') }}">Inicio</a>
+        <a href="{{ url_for('employee.DataView') }}">Funcionário Cadastrados</a>
+        <a href="{{ url_for('employee.create') }}">Adicionar</a>
+    </nav>
+    <div class="container">
+        <h2>Lista de Funcionários</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>CPF</th>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Ações</th>
+            </tr>
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee.id }}</td>
+                <td>{{ employee.cpf }}</td>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.position }}</td>
+                <td>
+                    <a href="{{ url_for('employee.findEmployee', id=employee.id) }}">Ver</a>
+                    <a href="{{ url_for('employee.update', id=employee.id) }}">Atualizar</a>
+                    <a href="{{ url_for('employee.delete', id=employee.id) }}">Deletar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

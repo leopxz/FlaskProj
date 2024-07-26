@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Detalhes Funcionário</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('employee.index') }}">Inicio</a>
+        <a href="{{ url_for('employee.DataView') }}">Funcionário Cadastrados</a>
+        <a href="{{ url_for('employee.create') }}">Adicionar</a>
+    </nav>
+    <div class="container">
+        <h3>CPF</h3>
+        <p>{{ employee.cpf }}</p>
+        <hr>
+        <h3>Name</h3>
+        <p>{{ employee.name }}</p>
+        <h3>Position</h3>
+        <p>{{ employee.position }}</p>
+        <hr>
+    </div>
+</body>
+</html>

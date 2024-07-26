@@ -9,7 +9,6 @@ def index():
 
 @employee_blueprint.route('/create', methods=["GET", "POST"])
 def create():
-    
     if request.method == 'GET':
         return render_template('createpage.html')
     
@@ -17,7 +16,7 @@ def create():
         cpf = request.form['cpf']
         name = request.form['name']
         position = request.form['position']
-        employee = EmployeeModel(cpf = cpf, name = name, position=position)
+        employee = EmployeeModel(cpf=cpf, name=name, position=position)
         
         db.session.add(employee)
         db.session.commit()
@@ -25,8 +24,8 @@ def create():
     
 @employee_blueprint.route('/data')
 def DataView():
-    employee = EmployeeModel.query.all()
-    return render_template('datalist.html',employee=employee)
+    employees = EmployeeModel.query.all()
+    return render_template('datalist.html', employees=employees)
 
 @employee_blueprint.route('/data/<int:id>')
 def findEmployee(id):
@@ -39,7 +38,7 @@ def findEmployee(id):
 def update(id):
     employee = EmployeeModel.query.get(id)
     if not employee:
-        return "Empregado com id={id} não existe"
+        return f"Empregado com id={id} não existe"
     
     if request.method == 'POST':
         employee.cpf = request.form["cpf"]
@@ -57,7 +56,6 @@ def delete(id):
         if employee:
             db.session.delete(employee)
             db.session.commit()
-            
             return redirect('/data')
         abort(404)
     return render_template('delete.html', employee=employee)
