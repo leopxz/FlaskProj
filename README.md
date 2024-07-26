@@ -87,7 +87,7 @@ A estrutura do projeto é a seguinte:
 
 FlaskProj/<br>
 │<br>
-├── controllers/<br>
+├── **controllers/**<br>
 │   └── employeeController.py    => Controlador responsável pelas rotas e lógica de negócio<br>
 │<br>
 ├── models/<br>
