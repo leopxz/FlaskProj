@@ -89,21 +89,21 @@ FlaskProj/<br>
 │<br>
 ├── **src/**
 ├── **controllers/**<br>
-│   └── employeeController.py    --> Controlador responsável pelas rotas e lógica de negócio<br>
+└── employeeController.py    --> Controlador responsável pelas rotas e lógica de negócio<br>
 │<br>
 ├── **models/**<br>
-│   └── employeeModel.py    --> Modelo do banco de dados para os empregados<br>
+└── employeeModel.py    --> Modelo do banco de dados para os empregados<br>
 │
 ├── **static/**<br>
-│   └── css/<br>
-│       └── styles.css    --> Arquivo CSS para estilização das páginas HTML<br>
+└── css/<br>
+└── styles.css    --> Arquivo CSS para estilização das páginas HTML<br>
 │
 ├── **views/**<br>
-│   ├── createpage.html    --> Página para criar um novo empregado<br>
-│   ├── datalist.html    --> Página para listar todos os empregados<br>
-│   ├── delete.html    --> Página para confirmar a exclusão de um empregado<br>
-│   ├── mainpage.html    --> Página principal<br>
-│   └── update.html    --> Página para atualizar informações de um empregado<br>
+├── createpage.html    --> Página para criar um novo empregado<br>
+├── datalist.html    --> Página para listar todos os empregados<br>
+├── delete.html    --> Página para confirmar a exclusão de um empregado<br>
+├── mainpage.html    --> Página principal<br>
+└── update.html    --> Página para atualizar informações de um empregado<br>
 │<br>
 ├── app.py    --> Arquivo principal da aplicação Flask<br>
 ├── app_teste.py    --> Arquivo de realiação de teste na aplicação Flask<br>
