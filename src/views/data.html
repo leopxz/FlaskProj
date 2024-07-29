@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deletar</title>
+    <title>Detalhes</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
-        <h1>Deletar Funcionário</h1>
+        <h1>Detalhes Funcionário</h1>
     </header>
     <nav>
-        <a href="{{ url_for('employee.index') }}">Inicio</a>
+        <a href="{{ url_for('employee.index') }}">Início</a>
         <a href="{{ url_for('employee.DataView') }}">Funcionário Cadastrados</a>
         <a href="{{ url_for('employee.create') }}">Adicionar</a>
     </nav>
     <div class="container">
-        <h2>Deletar Funcionário</h2>
-        <form method="POST">
-            <p>Voce esta ciente que quer deletar o Funcionário {{ employee.name }}?</p>
-            <button type="submit">Deletar</button>
-        </form>
+        <h3>CPF:</h3>
+        <p>{{ employee.cpf }}</p>
+        <hr>
+        <h3>Nome:</h3>
+        <p>{{ employee.name }}</p>
+        <h3>Cargo:</h3>
+        <p>{{ employee.position }}</p>
+        <hr>
     </div>
+    <a href="{{ url_for('employee.DataView') }}" class="back-button">Voltar</a>
+
 </body>
 </html>

@@ -11,7 +11,7 @@
         <h1>Lista de Funcionários</h1>
     </header>
     <nav>
-        <a href="{{ url_for('employee.index') }}">Inicio</a>
+        <a href="{{ url_for('employee.index') }}">Início</a>
         <a href="{{ url_for('employee.DataView') }}">Funcionário Cadastrados</a>
         <a href="{{ url_for('employee.create') }}">Adicionar</a>
     </nav>
@@ -32,9 +32,10 @@
                 <td>{{ employee.name }}</td>
                 <td>{{ employee.position }}</td>
                 <td>
-                    <a href="{{ url_for('employee.findEmployee', id=employee.id) }}">Ver</a>
-                    <a href="{{ url_for('employee.update', id=employee.id) }}">Atualizar</a>
-                    <a href="{{ url_for('employee.delete', id=employee.id) }}">Deletar</a>
+                    <a href="{{ url_for('employee.findEmployee', id=employee.id) }}" class="btn btn-view">Ver</a>
+                    <a href="{{ url_for('employee.update', id=employee.id) }}" class="btn btn-update">Atualizar</a>
+                    <a href="{{ url_for('employee.delete', id=employee.id) }}" class="btn btn-delete">Deletar</a>
+                
                 </td>
             </tr>
             {% endfor %}

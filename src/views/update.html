@@ -11,7 +11,7 @@
         <h1>Atualizar Cadastro</h1>
     </header>
     <nav>
-        <a href="{{ url_for('employee.index') }}">Inicio</a>
+        <a href="{{ url_for('employee.index') }}">Início</a>
         <a href="{{ url_for('employee.DataView') }}">Funcionário Cadastrados</a>
         <a href="{{ url_for('employee.create') }}">Adicionar</a>
     </nav>
@@ -24,7 +24,7 @@
             <input type="text" id="name" name="name" value="{{ employee.name }}">
             <label for="position">Cargo:</label>
             <input type="text" id="position" name="position" value="{{ employee.position }}">
-            <button type="submit">Atualizar</button>
+            <button type="submit" class="update-button">Atualizar</button>
         </form>
     </div>
 </body>
