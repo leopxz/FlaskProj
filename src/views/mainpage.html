@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Pagina Inicial</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('employee.index') }}"><i class="home"></i> Início</a>
+        <a href="{{ url_for('employee.DataView') }}"><i class="home"></i> Cadastrados</a>
+        <a href="{{ url_for('employee.create') }}"><i class="home"></i> Criar</a>
+    </nav>
+    <div class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Bem-vindo à Personalite</h2>
+                <p>
+                    A Personalite é um sistema de gerenciamento online projetado para otimizar a administração de recursos humanos em sua empresa.
+                    Nossa plataforma oferece uma maneira prática e eficiente de gerenciar todas as informações dos seus funcionários, permitindo 
+                    que, você mantenha um controle detalhado sobre cada membro da equipe.
+                </p>
+            </div>
+        </section>
+        <section class="features-section">
+            <div class="feature-card">
+                <i class="fas fa-user-plus fa-3x"></i>
+                <h3>Funcionalidades</h3>
+                <p>
+                    Com a Personalite, você pode facilmente criar novos registros de funcionários, visualizar informações detalhadas, 
+                    atualizar dados existentes e remover registros que não são mais necessários. Cada funcionário é identificado por um CPF, 
+                    nome e cargo, garantindo uma gestão organizada e acessível.
+                </p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-database fa-3x"></i>
+                <h3>Tecnologia</h3>
+                <p>
+                    A aplicação utiliza um banco de dados robusto para garantir a persistência e a segurança dos dados. O sistema foi desenvolvido 
+                    com o framework Flask e utiliza o SQLAlchemy para gerenciar as operações de banco de dados de forma eficiente e confiável. 
+                    Isso assegura que suas informações estejam sempre disponíveis e atualizadas.
+                </p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-cog fa-3x"></i>
+                <h3>Usabilidade</h3>
+                <p>
+                    A Personalite foi projetada para ser intuitiva e fácil de usar, com uma interface amigável que facilita a navegação e a 
+                    realização de tarefas administrativas. Com nossa solução, você poderá se concentrar no que realmente importa: o crescimento e o sucesso de sua empresa.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
