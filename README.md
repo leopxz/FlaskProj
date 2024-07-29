@@ -87,6 +87,7 @@ A estrutura do projeto é a seguinte:
 
 FlaskProj/<br>
 │<br>
+├── **src/**
 ├── **controllers/**<br>
 │   └── employeeController.py    --> Controlador responsável pelas rotas e lógica de negócio<br>
 │<br>
@@ -104,12 +105,13 @@ FlaskProj/<br>
 │   ├── mainpage.html    --> Página principal<br>
 │   └── update.html    --> Página para atualizar informações de um empregado<br>
 │<br>
+├── app.py    --> Arquivo principal da aplicação Flask<br>
+├── app_teste.py    --> Arquivo de realiação de teste na aplicação Flask<br>
+├── bancodedados.py    --> Script para inicializar o banco de dados<br>
 ├── .gitignore    --> Arquivos e diretórios a serem ignorados pelo Git<br>
 ├── LICENSE    --> Licença do projeto<br>
 ├── README.md    --> Documentação do projeto<br>
-├── app.py    --> Arquivo principal da aplicação Flask<br>
 ├── banco    --> Banco de dados SQLite<br>
-├── bancodedados.py    --> Script para inicializar o banco de dados<br>
 └── requirements.txt    --> Lista de dependências do projeto<br>
 
 ---
