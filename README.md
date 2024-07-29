@@ -87,17 +87,17 @@ A estrutura do projeto é a seguinte:
 
 FlaskProj/<br>
 │<br>
-├── **src/**
+├── **src/**<br>
 ├── **controllers/**<br>
 └── employeeController.py    --> Controlador responsável pelas rotas e lógica de negócio<br>
 │<br>
 ├── **models/**<br>
 └── employeeModel.py    --> Modelo do banco de dados para os empregados<br>
-│
+│<br>
 ├── **static/**<br>
 └── css/<br>
 └── styles.css    --> Arquivo CSS para estilização das páginas HTML<br>
-│
+│<br>
 ├── **views/**<br>
 ├── createpage.html    --> Página para criar um novo empregado<br>
 ├── datalist.html    --> Página para listar todos os empregados<br>
