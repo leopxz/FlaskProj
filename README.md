@@ -41,27 +41,6 @@ Observação: Você deve ver o nome do ambiente virtual (por exemplo, .venv) no 
      pip install -r requirements.txt
 
 
-### Configuração do Banco de Dados
-
-Para configurar o banco de dados, siga estas etapas:
-
-Inicialize o banco de dados:
-
-No terminal, execute:
-
-    flask db init
-    
-Crie as migrações iniciais:
-Execute:
-    
-    flask db migrate -m "Initial migration."
-
-Aplique as migrações ao banco de dados:
-Execute:
-    
-    flask db upgrade
-
-
 ### Execução da Aplicação
 
 Para executar o projeto, siga os seguintes passos:
